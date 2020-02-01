@@ -4,21 +4,24 @@ defmodule PlugClacks.MixProject do
   def project do
     [
       app: :plug_clacks,
-      version: "0.1.0",
+      description: "Remember of the fallen",
+      version: "1.0.0",
       elixir: "~> 1.10",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      package: [
+        licenses: ["MIT-no-bad-people"],
+        links: %{
+          "GitHub" => "https://github.com/hauleth/plug_clacks"
+        }
+      ]
     ]
   end
 
-  # Run "mix help compile.app" to learn about applications.
   def application do
-    [
-      extra_applications: [:logger]
-    ]
+    []
   end
 
-  # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
       {:plug, "~> 1.0"},
