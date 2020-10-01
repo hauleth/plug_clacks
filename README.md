@@ -26,7 +26,7 @@ long as the clacks are standing.)
 Keeping the legacy of [Sir Terry Pratchett][terry] alive forever. For as long as his name
 is still passed along the Clacks (currently known as internet), Death can't have him.
 
-This library adds [`X-Clacks-Overhead`][clacks] (above text is copied from that
+This library adds [`x-clacks-overhead`][clacks] (above text is copied from that
 page) HTTP header to all responses sent from your Plug application.
 
 ## Installation and usage
@@ -36,7 +36,7 @@ The package can be installed by adding `plug_clacks` to your list of dependencie
 ```elixir
 def deps do
   [
-    {:plug_clacks, "~> 0.1.0"}
+    {:plug_clacks, "~> 1.0.0"}
   ]
 end
 ```

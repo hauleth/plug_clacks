@@ -28,7 +28,7 @@ defmodule PlugClacks do
   Keeping the legacy of [Sir Terry Pratchett][terry] alive forever. For as long as his name
   is still passed along the Clacks (currently known as internet), Death can't have him.
 
-  This library adds [`X-Clacks-Overhead`][clacks] (above text is copied from that
+  This library adds [`x-clacks-overhead`][clacks] (above text is copied from that
   page) HTTP header to all responses sent from your Plug application.
 
   ## Usage
@@ -52,7 +52,7 @@ defmodule PlugClacks do
     names = Keyword.get(opts, :names, [])
 
     for name <- ["Terry Pratchett" | names],
-        do: {"x-clacks-overheard", "GNU " <> name}
+        do: {"x-clacks-overhead", "GNU " <> name}
   end
 
   @impl true
