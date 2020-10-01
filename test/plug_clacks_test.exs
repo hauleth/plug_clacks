@@ -7,11 +7,11 @@ defmodule PlugClacksTest do
 
   doctest Subject
 
-  test "response contains x-clacks-overheard header" do
+  test "response contains x-clacks-overhead header" do
     assert [] != get_clacks(call())
   end
 
-  test "response contains `GNU Terry Pratchett` in clacks overheard" do
+  test "response contains `GNU Terry Pratchett` in clacks overhead" do
     assert "GNU Terry Pratchett" in get_clacks(call())
   end
 
@@ -35,5 +35,5 @@ defmodule PlugClacksTest do
     |> Subject.call(options)
   end
 
-  defp get_clacks(conn), do: get_resp_header(conn, "x-clacks-overheard")
+  defp get_clacks(conn), do: get_resp_header(conn, "x-clacks-overhead")
 end
